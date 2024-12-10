@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4a27cbc2-9962-4bab-b30a-1c9b19d40c1a" name="Default Changelist" comment="" />
+    <list default="true" id="4a27cbc2-9962-4bab-b30a-1c9b19d40c1a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Stack/Minimum_Stack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -88,7 +91,7 @@
     <property name="project.structure.side.proportion" value="0.22781774" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
-  <component name="RunManager" selected="Application.Valid_Parenthesis">
+  <component name="RunManager" selected="Application.Minimum_Stack">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -111,14 +114,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Longest_Consecutive_Sequence" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Minimum_Stack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="ArraysAndHashing.Longest_Consecutive_Sequence" />
+      <option name="MAIN_CLASS_NAME" value="Stack.Minimum_Stack" />
       <module name="NeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Two_Pointers.*" />
+          <option name="PATTERN" value="Stack.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -204,19 +207,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Longest_Consecutive_Sequence" />
       <item itemvalue="Application.ThreeSum" />
       <item itemvalue="Application.Container_With_Most_Water" />
       <item itemvalue="Application.Trapping_Rain_Water" />
       <item itemvalue="Application.Valid_Parenthesis" />
+      <item itemvalue="Application.Minimum_Stack" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Minimum_Stack" />
         <item itemvalue="Application.Valid_Parenthesis" />
         <item itemvalue="Application.Trapping_Rain_Water" />
         <item itemvalue="Application.Container_With_Most_Water" />
         <item itemvalue="Application.ThreeSum" />
-        <item itemvalue="Application.Longest_Consecutive_Sequence" />
       </list>
     </recent_temporary>
   </component>
