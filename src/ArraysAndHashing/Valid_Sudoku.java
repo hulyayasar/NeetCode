@@ -63,6 +63,35 @@ public class Valid_Sudoku {
         return true;
 
     }
+
+    //Bitmask
+    public static boolean isValidSudoku_4(char[][] board) {
+
+
+        for(int r= 0; r<9; r++){
+            int [] row = new int[9];
+            int[] column = new int[9];
+            int[] block = new int[9];
+
+            for(int c= 0; c<9; c++){
+
+                int currentValue = board[r][c]-1;
+
+                if( ((row[r] & (1<<currentValue)) > 0) ||
+                        ((column[c] & (1<<currentValue))> 0) ||
+                        ((block[((r/3)*3 + (c/3))] & (1<<currentValue)) > 0))
+                    return false;
+                else{
+                    row[r] = row[r] | (1<<currentValue);
+                    column[c] = column[c] | (1<<currentValue);
+                    block[((r/3)*3 + (c/3))] |= (1<<currentValue);
+
+                }
+            }
+        }
+
+        return true;
+    }
     public static void main(String[] args) {
 
         char[][] board = {{'1','2','.','.','3','.','.','.','.'},
@@ -75,10 +104,10 @@ public class Valid_Sudoku {
                 {'.','.','.','4','1','9','.','.','8'},
                 {'.','.','.','.','8','.','.','7','9'}};
 
-        System.out.println(isValidSudoku_3(board));
+        System.out.println(isValidSudoku_4(board));
 
     }
-    
+
     public boolean isValidSudoku(char[][] board) {
 
         //boolean flag = true;
