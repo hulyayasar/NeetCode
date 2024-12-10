@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a27cbc2-9962-4bab-b30a-1c9b19d40c1a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ArraysAndHashing/Longest_Consecutive_Sequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArraysAndHashing/Longest_Consecutive_Sequence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ArraysAndHashing/Valid_Palindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Two_Pointers/Valid_Palindrome.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +105,7 @@
       <module name="NeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ArraysAndHashing.*" />
+          <option name="PATTERN" value="Two_Pointers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -121,7 +120,7 @@
       <module name="NeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ArraysAndHashing.*" />
+          <option name="PATTERN" value="Two_Pointers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -136,7 +135,7 @@
       <module name="NeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ArraysAndHashing.*" />
+          <option name="PATTERN" value="Two_Pointers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -151,7 +150,7 @@
       <module name="NeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ArraysAndHashing.*" />
+          <option name="PATTERN" value="Two_Pointers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -166,7 +165,7 @@
       <module name="NeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ArraysAndHashing.*" />
+          <option name="PATTERN" value="Two_Pointers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
