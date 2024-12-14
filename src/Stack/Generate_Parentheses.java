@@ -6,7 +6,7 @@ import java.util.Stack;
 
 public class Generate_Parentheses {
 
-    public List<String> generateParenthesis(int n) {
+    public static List<String> generateParenthesis(int n) {
 
         int o =n, c=n;
         StringBuilder stack = new StringBuilder();
@@ -17,7 +17,7 @@ public class Generate_Parentheses {
 
 
     }
-    public void recursion(StringBuilder stack, int o, int c, List<String> list) {
+    public static void recursion(StringBuilder stack, int o, int c, List<String> list) {
 
         if(o==0 && c==0){
             list.add(stack.toString());
@@ -37,6 +37,15 @@ public class Generate_Parentheses {
             stack.deleteCharAt(stack.length()-1);
 
         }
+    }
+
+    public static void main(String[] args) {
+
+       int n = 3;
+        System.out.println(generateParenthesis(n));
+
+
+
     }
 
 }
