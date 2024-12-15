@@ -31,7 +31,6 @@ public class Search_2D_Matrix {
     }
 
     public static boolean searchMatrix_2(int[][]matrix, int target){
-        
         int lengthColumn = matrix.length;
         if(lengthColumn == 0)return false;
         int lengthRow = matrix[0].length;
