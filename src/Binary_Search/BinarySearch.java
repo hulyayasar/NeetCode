@@ -26,13 +26,37 @@ public class BinarySearch {
         }
 
     }
+
+    //iteratively binary search
+    public static int search_2(int[] nums, int target) {
+
+        int left = 0, right = nums.length-1;
+        int m = -1;
+        boolean flag = true;
+
+        while(left<=right){
+            m = (left + right)/2;
+            if(nums[m]==target){
+                flag = false;
+                break;
+            }
+            else if(nums[m]<target){
+                left = m+1;
+            }else{
+                right = m-1;
+            }
+        }
+        if(flag) m = -1;
+       return m;
+    }
+
     public static String testSearch(int[] nums, int target, int expected) {
-        int result = search(nums, target);
+        int result = search_2(nums, target);
         return result == expected ? "PASS" : "FAIL: got " + result + " but expected " + expected;
     }
 
     public static void main(String[] args) {
-        // Test cases
+        //Test cases
         System.out.println(testSearch(new int[]{-1, 0, 2, 4, 6, 8}, 4, 3));  // Expected: 3
         System.out.println(testSearch(new int[]{-1, 0, 2, 4, 6, 8}, 2, 2));  // Expected: 2
         System.out.println(testSearch(new int[]{-1, 0, 2, 4, 6, 8}, 6, 4));  // Expected: 4
