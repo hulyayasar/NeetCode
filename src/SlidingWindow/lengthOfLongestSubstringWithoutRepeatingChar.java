@@ -1,5 +1,8 @@
 package SlidingWindow;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class lengthOfLongestSubstringWithoutRepeatingChar {
 
     public static int lengthOfLongestSubstring(String s) {
@@ -18,13 +21,28 @@ public class lengthOfLongestSubstringWithoutRepeatingChar {
 
     }
 
+    public static int lengthOfLongestSubstring_2(String s) {
 
+        int maxLen=0;
+        int l=0;
+        Set<Character> set = new HashSet<>();
 
+        for(int r=0; r<s.length(); r++){
 
+            while(set.contains(s.charAt(r))){
+                set.remove(s.charAt(l));
+                l++;
+            }
+            set.add(s.charAt(r));
+            maxLen = maxLen<(r-l +1) ? (r-l +1): maxLen;
+        }
+        return maxLen;
+    }
+    
     public static void main(String[] args) {
-        //String s= "bbbb";
-        String s= "zxyzxyz";
-        System.out.println(lengthOfLongestSubstring(s));
+        String s= "bbbb";
+        //String s= "zxyzxyz";
+        System.out.println(lengthOfLongestSubstring_2(s));
 
 
     }
