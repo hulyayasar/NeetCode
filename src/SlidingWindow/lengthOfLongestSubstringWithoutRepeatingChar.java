@@ -38,7 +38,7 @@ public class lengthOfLongestSubstringWithoutRepeatingChar {
         }
         return maxLen;
     }
-    
+
     public static void main(String[] args) {
         String s= "bbbb";
         //String s= "zxyzxyz";
